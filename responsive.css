@@ -1,0 +1,234 @@
+/* body {
+    background-color: aqua;
+} */
+
+.projects {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1435px) {
+    /* body {
+        background-color: yellow;
+    } */
+
+    .services>ul li {
+        width: 40vw;
+        background: rgb(19, 19, 19);
+    }
+
+    .services ul {
+        flex-wrap: wrap;
+    }
+
+    .project img {
+        height: 200px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    /* body {
+        background-color: green;
+    } */
+
+    .skills>ul {
+        grid-template-columns: auto auto;
+        column-gap: 309px;
+    }
+
+    .project img {
+        height: 171px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    /* body {
+        background-color: brown;
+    } */
+    .html-project h2,
+.js-project h2,
+.pug-project h2,
+.bootstrap-project h2,
+.tailwind-project h2 {
+    margin-left: 20px;
+    font-size: 1.4em;
+
+}
+
+    .skills>ul {
+        grid-template-columns: auto auto;
+        column-gap: 164px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .bio {
+        font-size: 10px;
+    }
+    .form,.con{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .form{
+        border-left: 0px;
+        border-top: 5px solid rgb(216, 66, 81);;
+    }
+    .n{
+        margin-top: 60px;
+    }
+
+    .static-text {
+        margin-top: 15px;
+    }
+
+    .services>div{
+        margin: 20px auto;
+        flex-wrap: wrap;
+    }
+    .service{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    /* body {
+        background-color: rgb(55, 43, 226);
+    } */
+
+    .skills>ul {
+        grid-template-columns: auto auto;
+        column-gap: 77px;
+    }
+    .intro{
+        font-size: 10px;
+        padding: 10px;
+
+    }
+}
+@media only screen and (max-width: 675px) {
+    /* body {
+        background-color: blueviolet;
+    } */
+
+    .skills>ul {
+        grid-template-columns: auto;
+        row-gap: 27px;
+        font-size: 22px;
+    }
+    .skills>ul img{
+        width: 20px;
+    }
+    .skills>ul img {
+        width: 39px;
+        margin-right: 30px;
+    }
+    .service{
+        width: 75%;
+    }
+    .con{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 575px) {
+   /* body{
+    background-color: rgb(116, 46, 59);
+   } */
+    .intro{
+        font-size: 8px;
+        padding: 10px;
+
+    }
+    .button{
+        margin: 27px auto;
+    }
+    .static-text{
+        margin-top: 26px;
+    }
+    .dyanmic-text li span::after {
+       top:-12px;
+    }
+    .projects>h1,.skills>h1,.services>h1{
+        font-size: 3.5em;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+   /* body{
+    background-color: blanchedalmond;
+   } */
+   .skills>h1{
+    font-size: 3.5em;
+   }
+   .skills>ul{
+    font-size: 16px;
+   }
+    .con{
+        padding: 0;
+        font-size: 12px;
+    }
+    .mail>span {
+        top: -18px;}
+    .con img{
+        width: 30px;
+    }
+    .intro{
+        font-size: 6px;
+        padding: 10px;
+
+    }
+    .form div{
+        padding: 0px 10px;
+    }
+    label {
+        position: absolute;
+        color: white;
+        top: 11px;
+        left: 26px;}
+}
+
+@media only screen and (max-width: 370px) {
+    /* body{
+     background-color: rgb(234, 149, 234);
+    } */
+     .con{
+        font-size: 9px;
+     }
+     .skills>ul{
+        font-size: 13px;
+
+     }
+     .form>div{
+        font-size: 10px;
+     }
+    }
+@media only screen and (max-width: 300px) {
+    /* body{
+     background-color: rgb(142, 82, 142);
+    } */
+     .con{
+        font-size: 8px;
+     }
+     .skills>ul{
+        font-size: 13px;
+
+     }
+    }
+@media only screen and (max-width: 265px) {
+    /* body{
+     background-color: rgb(57, 9, 57);
+    } */
+     .con{
+        font-size: 6px;
+     }
+     .skills>ul{
+        font-size: 13px;
+
+     }
+    }

@@ -1,0 +1,552 @@
+/* intro section */
+.wrapper {
+    display: inline-flex;
+    text-align: left;
+}
+
+.static-text {}
+
+.wrapper .static-text {
+    font-size: 4em;
+    text-transform: none;
+
+}
+
+.wrapper .dyanmic-text {
+    margin-left: 10px;
+    line-height: 90px;
+    /* background: #ff0000; */
+    height: 90px;
+    overflow: hidden;
+}
+
+.dyanmic-text li {
+    font-size: 4em;
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    color: rgb(216, 66, 81);
+    animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -284px;
+    }
+
+}
+
+.dyanmic-text li span {
+    position: relative;
+}
+
+
+.dyanmic-text li span::after {
+    content: "";
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    z-index: 3;
+    top: -12px;
+    left: 0;
+    background-color: black;
+    border-left: 2px solid rgb(203, 72, 85);
+    animation: typing 2s steps(13) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+
+}
+
+.navbar ul li a:focus {
+    color: rgb(214, 21, 40);
+    text-underline-offset: 7px;
+    text-decoration: underline;
+}
+
+.navbar ul li a:hover {
+    color: rgb(214, 21, 40);
+    text-underline-offset: 7px;
+    text-decoration: underline;
+    transition: all 0.35s ease-in;
+}
+
+/* skill section */
+#skill:hover{
+    color: transparent;
+
+}
+
+
+
+.html {
+    position: absolute;
+    width: 7%;
+    color: white;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    border: 3px solid transparent;
+    opacity: 0;
+    
+    
+}
+.html:hover{
+    opacity: 1;
+    animation-name: grow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.html:after,
+.bootstrap:after,
+.express:after,
+.tailwind:after,
+.pug:after,
+.css:after, 
+.js:after,
+.mongodb:after, 
+.react:after, 
+.java:after, 
+.node:after 
+{
+    content: "";
+    border: 3px solid rgb(214, 21, 40);
+    position: absolute;
+    /* background-color: rgb(19, 19, 19); */
+    top: -4.5px;
+    left: -1px;
+    /* left: 0; */
+    width: 320px;
+    height: 104%;
+    border-radius: 14px;
+    /* display: none; */
+}
+
+@keyframes grow {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 270px;
+    }
+}
+
+.css {
+    position: absolute;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    border: 3px solid transparent;
+    opacity: 0;
+}
+.css:hover{
+    opacity: 1;
+    animation-name:css;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes css {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 224px;
+    }
+}
+
+.js {
+    border: 3px solid transparent;
+    position: absolute;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+ opacity: 0;
+}
+.js:hover{
+    opacity: 1;
+    animation-name:js;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes js {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 208px;
+    }
+}
+
+.java {
+    border: 3px solid transparent;
+    position: absolute;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    opacity: 0;
+}
+.java:hover{
+    opacity: 1;
+    animation-name:java;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes java {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 166px;
+    }
+}
+
+.node {
+    position: absolute;
+    border: 3px solid transparent;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    opacity: 0;
+}
+.node:hover{
+    opacity: 1;
+    animation-name:node;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes node {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 192px;
+    }
+}
+
+.express {
+    border: 3px solid transparent;
+    position: absolute;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    opacity: 0;
+}
+
+.express:hover{
+    opacity: 1;
+    animation-name:ex;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes ex {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 190px;
+    }
+}
+
+.pug {
+    position: absolute;
+    border: 3px solid transparent;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+   opacity: 0;
+}
+.pug:hover{
+    opacity: 1;
+    animation-name:pug;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pug {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 192px;
+    }
+}
+
+.mongodb {
+    border: 3px solid transparent;
+    position: absolute;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+ opacity: 0;
+}
+.mongodb:hover{
+    opacity: 1;
+    animation-name:mongo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mongo {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 160px;
+    }
+}
+
+.bootstrap {
+    position: absolute;
+    border: 3px solid transparent;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    opacity: 0;
+}
+
+.bootstrap:hover{
+    opacity: 1;
+    animation-name:boot;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes boot {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 240px;
+    }
+}
+
+.react {
+    position: absolute;
+    border: 3px solid transparent;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+    opacity: 0;
+}
+.react:hover{
+    opacity: 1;
+    animation-name:react;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes react {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 40px;
+    }
+}
+
+.tailwind {
+    position: absolute;
+    border: 3px solid transparent;
+    width: 7%;
+    color: white;
+    z-index: 2;
+    background-color: rgb(214, 21, 40);
+    border-radius: 12px;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 13px;
+opacity: 0;
+}
+.tailwind:hover{
+    opacity: 1;
+    animation-name:tail;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tail {
+    from {
+        width: 70px;
+        ;
+    }
+    
+    to {
+        width: 240px;
+    }
+}
+
+
+
+/* project image */
+.project img:hover {
+    position: relative;
+    animation: img 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    border: 30px solid rgba(255, 149, 149, 0.63);
+}
+
+@keyframes img {
+    from {}
+    
+    to {
+        transform: scale(1.2);
+        box-shadow: 20px 20px 50px rgba(28, 28, 28, 0.58);
+        
+    }
+
+}
+
+/* service banner */
+.service:hover {
+    animation:serv .5s ease-in-out ;
+    animation-fill-mode: forwards;
+
+
+}
+@keyframes serv {
+    from{}to{
+        position: relative;
+    transform: scale(1.2);
+    border: 3px solid red;
+    border-radius: 10px;
+    box-shadow: 10px 8px 1px rgba(255, 255, 255, 0.58);
+    background-color: rgb(19, 19, 19);
+
+    }
+    
+}
+.service:nth-child(1):hover {
+    left: 50px;
+    transition: left 0.5s ease-in-out;
+    
+}
+.service:nth-child(4):hover {
+    transition: left 0.5s ease-in-out;
+    left: -50px;
+
+}
+
+.con>a:hover {
+    background-color: transparent;
+    border-color: rgb(203, 72, 85);
+    transform: scale(1.2);
+    color: rgb(203, 72, 85);
+    transition: all 0.5s ease-out;
+}
+
+.mail:hover,
+.phone:hover {
+
+    animation: up .71s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes up {
+    from {}
+
+    to {
+        position: relative;
+        left: 9px;
+        color: rgb(214, 21, 40);
+        font-weight: bold;
+    }
+}
+
+input:focus~label,
+input:valid~label,
+textarea:valid~label,
+textarea:focus~label {
+    top: -28px;
+    left: 5px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 3px;
+
+}
+
+textarea:hover,
+textarea:valid,
+input:hover,
+input:valid {
+    background-color: transparent;
+    border: 2px solid rgb(203, 72, 85);
+    border-radius: 12px;
+
+}
